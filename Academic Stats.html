@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/main.css">
+      <title>Page Title</title>
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-lg bg-light navbar-light">
+         <img src="https://unsplash.it/30/30" class="mr-2"><a class="navbar-brand" href="index.html">Home</a><button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-body" aria-controls="navbar-body" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+         <div class="collapse navbar-collapse" id="navbar-body">
+            <ul class="navbar-nav mr-auto"></ul>
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item"><a class="nav-link" href="UndergradEnrollment.html">Undergrad Enrollment</a></li>
+               <li class="nav-item"><a class="nav-link" href="Academic Stats.html">Academic Stats</a></li>
+               <li class="nav-item"><a class="nav-link" href="Acceptance Rates.html">Acceptance Rates</a></li>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </nav>
+      <div class="jumbotron jumbotron-fluid">
+         <div class="container">
+            <h1 class="display-4">Academic and Race Statistics</h1>
+            <p class="lead">Explore the academic statistics dataset that incudes ungraduate addmissions dataset from 42 public institutions in the 2005 - 2007 period</p>
+         </div>
+      </div>
+      
+      <div class="container" id="bsr-wrapper">
+         <div class='my-5'></div>
+         <h1>Scatter Plots of SAT vs ACT for Each Applicant by Race</h1>
+         <div class='my-5'></div>
+
+         <h2>Asian Applicants</h2>
+
+         <div class='my-5'></div>
+
+         <embed src="scatter_of_sat_vs_act_asian.html" type="text/html" height="700" width="1000"/> 
+         
+         <div class='my-5'></div>
+
+         <p> - There's a visible trend that Asian applicants with higher SAT and ACT scores are more frequently accepted. This suggests a positive correlation between test scores and acceptance rates.</p>
+         <p> - The majority of Asian Applicant applicants seem to have SAT scores between 1200 to 1400 and ACT scores between 25 to 30. Within this range, there is a mix of accepted and not accepted Asian applicants, indicating that within certain score ranges, other factors may influence the acceptance decision.</p>
+         <p> - The spread of SAT scores is broader among accepted Asian applicants as compared to ACT, suggesting that the SAT might be a more influential factor</p>
+         <p> - There are outliers visible, particularly in the ACT scores, where a few Asian applicants with very high ACT scores were not accepted. Similarly, there are applicants with lower SAT and ACT scores who were accepted, hinting at a holistic admissions process that considers more than just standardized test scores.</p>
+         <p> - There is a plateau at the top of the ACT scores around 35, where no Asian applicants have an ACT score above this number. </p>
+
+         <div class='my-5'></div>
+
+         <h2>White Applicants</h2>
+       
+         <div class='my-5'></div>
+
+         <embed src="scatter_of_sat_vs_act_white.html" type="text/html" height="700" width="1000"/> 
+
+         <div class='my-5'></div>
+
+         <p> - There were many white applicants who had the exact same stats, but the outcome of their admission was different. Some were accepted while some were rejected.</p>
+         <p> - There are several blue points with very high SAT scores, but there are also red points at similar or the same SAT scores. This implies that while higher test scores might improve chances, they are not the sole determinant of admission for white applicants.</p>
+         <p> - There is a dense concentration of data points at the higher end of both SAT and ACT scores. This suggests a competitive pool of white applicants with high test scores, potentially making it more difficult to differentiate among them based solely on test scores.</p>
+         <p> - Given that many data points are stacked, there is a high volume of white applicants with similar scores, especially in the middle range of SAT scores (around 600 to 1200). This mix further indicates that factors other than SAT and ACT scores are influencing admission decisions.</p>
+         <p> - There's a wide range of SAT scores among the accepted applicants, from around 600 to 1600. This range is broader than that for the ACT scores.</p>
+
+         <div class='my-5'></div>
+
+         <h2>Black Applicants</h2>
+
+         <div class='my-5'></div>
+
+         <embed src="scatter_of_sat_vs_act_black.html" type="text/html" height="700" width="1000"/> 
+
+         <div class='my-5'></div>
+
+         <p> - There’s a visible trend where black applicants applicants with higher SAT and ACT scores have a higher likelihood of acceptance, indicated by the increased density of blue dots as scores rise.</p>
+         <p> - There's a significant number of acceptances in the middle range of both SAT (around 600 to 1000) and ACT scores (approximately 15 to 25). This suggests that black applicants with average scores still have considerable opportunities for acceptance.</p>
+         <p> - Compared to the dense clusters of red dots at lower ACT scores, there are some blue dots interspersed, which implies that some black applicants with lower ACT scores are still being accepted.</p>
+         <p> - There’s a high density of red dots, especially in the SAT range of around 800 to 1000 and the ACT range of around 15 to 20. This could imply a competitive threshold within these score ranges where additional factors may play a significant role in the admission decision for black applicants.</p>
+         <p> - There are a few red dots at the higher end of the score spectrum. This could be indicative of a holistic admission process where factors other than test scores are considered, even for black applicants with high standardized test scores.</p>
+
+         <div class='my-5'></div>
+
+         <h2>Hispanic Applicants</h2>
+
+         <div class='my-5'></div>
+
+         <embed src="scatter_of_sat_vs_act_hispanic.html" type="text/html" height="700" width="1000"/> 
+
+         <div class='my-5'></div>
+
+         <p> - Similar to other observations, there's an overlap of accepted and rejected Hispanic applicants across various score ranges. This reaffirms that standardized test scores are not the sole criteria for admission decisions. </p>
+         <p> - Despite overlap, there's a trend where higher SAT and ACT correlate with higher likelihood of acceptance for Hispanic applicants.</p>
+         <p> - There is a  cluster of accepted Hispanic applicants within the mid-range SAT scores (around 600 to 1200). Within this band, there appears to be a relatively high number of acceptances, suggesting that Hispanic applicants with average SAT scores still have a considerable chance of being admitted.</p>
+         <p> - The ACT scores for accepted applicants range widely, from approximately 15 to 35. This might indicate that the ACT score is not as heavily weighted as the SAT score for Hispanic applicants. </p>
+         <p> - Compared to the other scatterplots, there appear to be fewer instances where applicants with very high test scores are rejected. This could indicate a different admissions trend for Hispanic applicants. </p>
+
+         <div class='my-5'></div>
+
+
+         <h2>Native American Applicants</h2>
+
+         <div class='my-5'></div>
+
+         <embed src="scatter_of_sat_vs_act_native_american.html" type="text/html" height="700" width="1000"/> 
+
+         <div class='my-5'></div>
+
+         <p> - For Native American applicants, there seems to be a correlation between applicants that have a high SAT and ACT scores with higher likelihood of being accepted. </p>
+         <p> - There are several accepted Native American applicants with ACT scores in the lower range, suggesting that factors other than ACT scores may have a significant impact on the acceptance of these applicants.</p>
+         <p> - The scatterplot shows that there are not as many Native applicants at the extreme low and high ends of both tests, particularly for ACT scores above 30 and SAT scores above 1400.</p>
+         <p> - Compared to the ACT, the SAT scores of accepted applicants are more dispersed across the score range. This could imply a broader consideration of SAT scores in the admissions process or a more diverse applicant pool in terms of SAT performance.</p>
+         <p> - There is a wide range of SAT scores (from approximately 600 to 1600) among accepted Native American applicants, suggesting that a high SAT score is not the only criterion for admission.</p>
+
+         <div class='my-5'></div>
+
+         <h1>Box Plot of SAT Scores by Ethnicity and Gender</h1>
+
+         <div class='my-5'></div>
+
+         
+
+         <div class='my-5'></div>
+
+         <embed src="box_plot_of_sat_by_ethnicity.html" type="text/html" height="700" width="1000"/> 
+
+         <div class='my-5'></div>
+
+         <p> - For male students, other races had the lowest upper fence, followed by hispanic/latino, pacific islander, and then a tie between black, white, and asian.</p>
+         <p> - For female students, hispanic had the lowest upper fence, followed by other races, pacific islander, asian, black and then white. </p>
+         <p> - The highest-lowest point, however, was female students of other races at a 490 SAT score followed by male students of other races at a 570 SAT score. </p>
+         <p> - All races excluding other races contains a point at 0. This can perhaps be caused by the minimal amount of other races in the dataset or by errors in the dataset. </p>
+         <p> - On average, women score lower than men on the SAT. The median follows the same trend. </p>
+
+         <div class='my-5'></div>
+
+         <h1>Distribution of GPA by Ethnicity </h1>
+
+         <embed src="dist_of_gpa_colored_histogram.html" type="text/html" height="700" width="1000"/> 
+
+         <div class='my-5'></div>
+         <p>- Out of all all the data points, a GPA score of 4.00 is the most common, with it being mostly comprised of white students. </p>
+         <p>- On average, black students have the lowest GPA, perhaps because of the unequal oppurtunities presented to them compared to other ethnicities. </p>
+         <p> - It is unusual that although many 4.00 GPA students were accepted, more than half as many students with a GPA of 3.00 were accepted.</p>
+         <p>- Pacific Islander and two or more races are the least represented in the data set, correlating to their total percent in the United States compared to other ethnicities.</p>
+         <p>- The data follows a sort of linear trend, with a large spike at the end.</p>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script><script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script><script src="js/main.js"></script>
+   </body>
+</html>
